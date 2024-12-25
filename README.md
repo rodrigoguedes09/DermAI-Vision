@@ -82,19 +82,22 @@ def analyze_lesion(image_path):
 ## Development
 
 ### Running Tests
-```bash
-make test
-```
 
-### Building Documentation
-```bash
-make docs
-```
+There are a few tests made for model avaliation.
 
-### Monitoring System
-```bash
-make monitor
-```
+#### GradCAM
+
+Shows the image and a heat map of where the model mostly acts.
+![image](https://github.com/user-attachments/assets/7975f2a1-e0f7-4e34-8140-954fdb6c35e7)
+
+#### Streamlit App
+
+Easy way to test the model uploading an image.
+
+![image](https://github.com/user-attachments/assets/04ca0dbd-15d4-40cd-a1d3-fbf4a737d8cd)
+
+![image](https://github.com/user-attachments/assets/8461352a-d261-450d-a93b-727cc26e07af)
+
 
 ## License
 
