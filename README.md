@@ -1,5 +1,4 @@
-
-# DermAI-Vision: Deep Learning for Skin Lesion Detection
+# SkinTumor Analyzer: Deep Learning for Skin Cancer Detection
 
 <div align="center">
 
@@ -12,39 +11,40 @@
 
 ## About
 
-DermAI-Vision is an advanced deep learning system designed to assist in the detection and classification of skin lesions. Using state-of-the-art convolutional neural networks and the ISIC dataset, the system achieves high accuracy in distinguishing between benign and malignant skin lesions.
+SkinLesion Analyzer is a deep learning system developed to assist healthcare professionals in the preliminary analysis of skin lesions. The system utilizes advanced convolutional neural networks trained on the ISIC (International Skin Imaging Collaboration) dataset to classify skin lesions into three categories: benign, malignant, or indeterminate.
 
-### Key Features
+## Key Features
 
-- Real-time skin lesion analysis
-- User-friendly web interface
-- RESTful API for integration
-- Advanced CNN architecture with attention mechanisms
-- Comprehensive visualization of model decisions
-- Docker support for easy deployment
+- Automated classification of skin lesions
+- Probability assessment for each category
+- Visualization of regions of interest
+- Support for high-resolution dermatoscopic images
+- Comprehensive reporting system
 
-## Quick Start
+## Technical Specifications
 
-### Prerequisites
+### Model Architecture
+- Custom CNN with attention mechanisms
+- Transfer learning using ResNet architecture
+- Advanced image preprocessing techniques
+- Specialized data augmentation for medical imaging
 
-- Python 3.10+
-- Docker and Docker Compose
-- NVIDIA GPU (optional, but recommended)
+### Performance Metrics
+- Overall Accuracy: 87.25%
+- Sensitivity: 85.3%
+- Specificity: 89.1%
+- AUC-ROC: 0.912
 
-### Installation
+## Installation
 
-1. **Clone the repository**
+### Using Docker (Recommended)
 ```bash
-git clone https://github.com/yourusername/DermAI-Vision.git
-cd DermAI-Vision
-```
-
-2. **Using Docker (Recommended)**
-```bash
+git clone https://github.com/yourusername/skinlesion-analyzer.git
+cd skinlesion-analyzer
 make setup
 ```
 
-3. **Manual Installation**
+### Manual Installation
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
@@ -57,21 +57,20 @@ pip install -r requirements.txt
 ## Usage
 
 ### Web Interface
+Access the system through a browser at `http://localhost:80`
 
-Access the web interface at `http://localhost:80`
+The interface provides:
+- Image upload functionality
+- Real-time analysis results
+- Probability distribution for each category
+- Visualization of significant regions
+- Downloadable reports
 
-1. Upload an image of a skin lesion
-2. Get instant analysis results
-3. View detailed visualization of the model's decision
-
-### API
-
-Access the API at `http://localhost:80/api`
-
+### API Integration
 ```python
 import requests
 
-def analyze_image(image_path):
+def analyze_lesion(image_path):
     with open(image_path, 'rb') as f:
         response = requests.post(
             'http://localhost:80/api/predict',
@@ -80,26 +79,7 @@ def analyze_image(image_path):
     return response.json()
 ```
 
-## Architecture
-
-The project uses a custom CNN architecture with:
-- Residual connections
-- Squeeze-and-Excitation blocks
-- Attention mechanisms
-- Advanced data augmentation
-
-```
-Input Image → CNN → Feature Extraction → Attention → Classification
-```
-
-## Performance
-
-- Accuracy: 87.25%
-- Sensitivity: 85.3%
-- Specificity: 89.1%
-- AUC-ROC: 0.912
-
-## 🛠Development
+## Development
 
 ### Running Tests
 ```bash
@@ -111,32 +91,15 @@ make test
 make docs
 ```
 
-### Monitoring
+### Monitoring System
 ```bash
 make monitor
-```
-
-## Project Structure
-
-```
-DermAI-Vision/
-├── src/                # Source code
-├── data/               # Dataset handling
-├── models/             # Trained models
-├── docker/             # Docker configuration
-├── tests/              # Unit tests
-└── docs/               # Documentation
 ```
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## Important Notice
 
-- [ISIC Archive](https://www.isic-archive.com/) for the dataset
-- [PyTorch](https://pytorch.org/) team for the amazing framework
-
-## Disclaimer
-
-This tool is for research and educational purposes only. It should not be used as a substitute for professional medical diagnosis. Always consult with a qualified healthcare provider for medical advice.
+This system is designed as a supplementary tool for healthcare professionals and should not be used as the sole basis for diagnosis. The final interpretation and diagnosis should always be made by qualified healthcare providers.
