@@ -7,7 +7,6 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red.svg)
 ![Docker](https://img.shields.io/badge/Docker-20.10-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![CI/CD](https://github.com/rodrigoguedes09/DermAI-Vision/actions)
 
 </div>
 
