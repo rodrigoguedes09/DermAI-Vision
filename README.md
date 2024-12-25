@@ -1,4 +1,4 @@
-# SkinTumor Analyzer: Deep Learning for Skin Cancer Detection
+# DermAI-Vision: Deep Learning for Skin Cancer Detection
 
 <div align="center">
 
