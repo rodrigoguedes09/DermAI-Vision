@@ -35,25 +35,6 @@ DermAI-Vision is a deep learning system developed to assist healthcare professio
 - Specificity: 89.1%
 - AUC-ROC: 0.912
 
-## Installation
-
-### Using Docker (Recommended)
-```bash
-git clone https://github.com/yourusername/skinlesion-analyzer.git
-cd skinlesion-analyzer
-make setup
-```
-
-### Manual Installation
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# or
-venv\Scripts\activate     # Windows
-
-pip install -r requirements.txt
-```
-
 ## Usage
 
 ### Web Interface
