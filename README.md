@@ -1,4 +1,4 @@
-# DermAI-Vision: Deep Learning for Skin Cancer Detection
+# Advanced Convolutional Neural Networks for Skin Cancer Detection
 
 <div align="center">
 
@@ -11,7 +11,7 @@
 
 ## About
 
-DermAI-Vision is a deep learning system developed to assist healthcare professionals in the preliminary analysis of skin lesions. The system utilizes advanced convolutional neural networks trained on the ISIC (International Skin Imaging Collaboration) dataset to classify skin lesions into three categories: benign, malignant, or indeterminate.
+This is a deep learning system developed to assist healthcare professionals in the preliminary analysis of skin lesions. The system utilizes advanced convolutional neural networks trained on the ISIC (International Skin Imaging Collaboration) dataset to classify skin lesions into three categories: benign, malignant, or indeterminate.
 
 ## Key Features
 
